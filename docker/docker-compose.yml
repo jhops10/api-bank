@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_USER=myuser
+      - MYSQL_PASSWORD=secret
+      - MYSQL_DATABASE=bank_db
+      - MYSQL_ROOT_PASSWORD=123
+    ports:
+      - 3306:3306
